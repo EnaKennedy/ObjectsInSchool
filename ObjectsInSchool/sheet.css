@@ -1,0 +1,61 @@
+body{
+    background-color: #a2cce8;
+    font-family: "Bookman Old Style";
+    text-align: center;
+}
+.t{
+    font-size:33px;
+}
+input{
+    font-size: 15px;
+}
+.button {
+    font-size: 13px;
+    margin:5px;
+    font-weight: bold;
+    width:100px;
+    background-color: rgba(111, 177, 255, 0.78);
+    color: black;
+    border:1px solid black;
+    text-display:inline-block;
+    border-radius:4px;
+}
+.button:hover{
+    background-color: #a424dc;
+}
+button:active{
+    transform: translateY(4px);
+}
+.button2 {
+    font-size: 13px;
+    margin:5px;
+    font-weight: bold;
+    width:100px;
+    background-color: rgba(111, 177, 255, 0.78);
+    color: black;
+    border:1px solid black;
+    text-display:inline-block;
+    border-radius:4px;
+}
+.button2:hover{
+    background-color: #dc09a0;
+}
+button2:active{
+    transform: translateY(4px);
+}
+.list{
+    width: 100px;
+    font-size: 15px;
+}
+hr{
+    margin-top: 20px;
+}
+.select{
+    width:100px;
+    font-size: 15px;
+}
+#listOutput{
+    position:relative;
+    margin:15px;
+    align-items: center;
+}

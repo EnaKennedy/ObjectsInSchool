@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School System</title>
+    <link rel="stylesheet" type="text/css" href="sheet.css">
+    <script src="objects.js"></script>
+    <script src="data.js"></script>
+    <script src="actions.js"></script>
+</head>
+<body onload="generateStudentList()">
+    <h1 class="t">School Management System</h1>
+    <h2>Add Items</h2>
+    <h3>Add New Student</h3>
+    <td><input type="text" id="sfname" size="20" placeholder="first name"></td>
+    <td><input type="text" id="slname" size="20" placeholder="last name"></td>
+    <td><input type="text" id="grade" size="20" placeholder="grade"></td>
+    <button class="button" onClick="addStudents()">Add Student</button>
+    <h3>Add New Teacher</h3>
+    <td><input type="text" id="tfname" size="20" placeholder="first name"></td>
+    <td><input type="text" id="tlname" size="20" placeholder="last name"></td>
+    <td><input type="text" id="subject" size="20" placeholder="subject"></td>
+    <button class="button" onClick="addTeacher()">Add Teacher</button>
+    <h3>Add New Section</h3>
+    <td><input type="text" id="sname" size="20" placeholder="subject"></td>
+    <td><input type="text" id="size" size="20" placeholder="section size"></td>
+    <button class="button" onClick="addSection()">Add Section</button>
+    <hr>
+    <h2>List Items</h2>
+    <select class="select" id="list">
+        <option value="0">Students</option>
+        <option value="1">Teachers</option>
+        <option value="2">Sections</option>
+    </select>
+    <button class="button2" id="listButton" onclick="listItems()">List Items</button>
+    <div id="listOutput"></div>
+    <hr>
+    <h2>Add Student to Section</h2>
+    Add
+    <select class="select" id="students">
+        <option value="0">Students</option>
+    </select>
+    <button class="button" onClick="generateSubjectList();">Select</button>
+    To
+    <select class="select" id="subjects">
+        <option value="0">Subject</option>
+    </select>
+    <button class="button" onClick="generateTeacherList();">Select</button>
+    With
+    <select class="select" id="teachers">
+        <option value="0">Teacher</option>
+    </select>
+    <button class="button" id="addButton" onclick="addStudentToSection()">Add</button>
+    <div id="added"></div>
+    <hr>
+    <h2>List Students in Section</h2>
+    <select class="select" id="section">
+        <option value="0">Section</option>
+    </select>
+    <button class="button2" onClick="listStudentsInSection()">List</button>
+    <div id="studlist"></div>
+</body>
+</html>
